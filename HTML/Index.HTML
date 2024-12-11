@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital World</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Index.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to Digital World</h1>
+        <nav>
+            <ul>
+            
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Your One-Stop Shop for Digital Products</h2>
+            <p>Explore our range of planners and checklists designed to make your life easier.</p>
+            <button id="explore-btn" onclick="location.href='products.html'">Explore Now</button>
+        </section>
+
+
+    
+
+        <script>
+            (function() {
+                let slideIndex = 0;
+                const slides  = document.getElementsByClassName("mySlides");
+                
+                function showSlides() {
+                    for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display="none"
+                }
+                // Increment the slides by 1 each time it scrolls
+                slideIndex++;
+                if (slideIndex >slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display="block";
+
+                // Change the slides every 5 seconds
+                setTimeout(showSlides, 5000);
+                }
+
+                // Start the slideshow on page load
+                document.addEventListener("DOMContentLoaded", function () {
+                    showSlides();
+                })
+                
+            })();
+
+        </script>
+        <section class="featured-products">
+           <div class="info-section">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum sed quae atque sit illo quia ducimus distinctio reprehenderit culpa vero, quidem corrupti error optio iusto provident officiis debitis unde a.</p>
+           </div>
+           <div class="info-production">
+            <h2 style="width: 100%; text-align: center;">Featured Products</h2>
+            <br><br><br>
+            <div class="slideshow-container" style="margin-top: 20px;">
+                <div class="mySlides fade">
+                    <div class="product-card" id="international-moving-planner">
+                        <img src="images/Logo.jpg" alt="International Moving Planner" width="100%" height="350">
+                        <h3>International Moving Planner</h3>
+                        <p>A comprehensive planner to help you navigate your international move.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="product-card" id="international-moving-planner">
+                        <img src="images/demo.jpg" alt="International Moving Planner" width="100%" height="350">
+                        <h3>International Moving Planner</h3>
+                        <p>A comprehensive planner to help you navigate your international move.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="product-card" id="international-moving-planner">
+                        <img src="images/demo1.jpg" alt="International Moving Planner" width="100%" height="350">
+                        <h3>International Moving Planner</h3>
+                        <p>A comprehensive planner to help you navigate your international move.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="product-card" id="international-moving-planner">
+                        <img src="images/Products-preview.PNG" alt="International Moving Planner" width="100%" height="350">
+                        <h3>International Moving Planner</h3>
+                        <p>A comprehensive planner to help you navigate your international move.</p>
+                        <button class="buy-now">Buy Now</button>
+                    </div>
+                </div>
+            
+            </div>
+
+
+
+
+         
+            
+
+           </div>
+            <!-- Add more product cards here -->
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>"The International Moving Planner made my move so much easier!" - Jane Doe</blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital World. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js">
+let slideIndex = 0; // Start at the first slide
+showSlides(); // Call the function to show slides
+
+function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    
+    // Hide all slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    
+    slideIndex++; // Increment slide index
+    if (slideIndex > slides.length) {slideIndex = 1} // Reset to first slide if at end
+    
+    slides[slideIndex - 1].style.display = "block"; // Show current slide
+}
+
+// Function to navigate through slides with buttons
+function plusSlides(n) {
+    slideIndex += n; // Change slide index by n
+    if (slideIndex > document.getElementsByClassName("mySlides").length) {slideIndex = 1}
+    if (slideIndex < 1) {slideIndex = document.getElementsByClassName("mySlides").length}
+    
+    showSlides(); // Show updated slide
+}
+
+    </script>
+
+
+</body>
+</html>

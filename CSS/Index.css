@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3; /* Light gray for the body */
+    color: #4d4d4d; /* Darker gray for body text */
+}
+
+header {
+    background-color: #333; /* Dark gray for the header */
+    color: #f5f5f5; /* Light gray for header text */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #f5f5f5; /* Light gray for nav links */
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    color: white; /* Keeping hero text white for contrast */
+    padding: 100px 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #ff5722; /* A vibrant color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+body {
+    background-color: #d3d3d3; /* Light gray for the body */
+    color: #4d4d4d; /* Darker gray for body text */
+}
+
+header, footer {
+    background-color: #333; /* Dark gray for header and footer */
+    color: #f5f5f5; /* Light gray for header and footer text */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #ff5722; /* A vibrant color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slideshow-container{
+    margin-top: 1em;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slideshow-container:hover{
+    /* width: 1050px;
+    min-height: 500px; */
+    box-shadow: 10px 0 5px rgba(0,0,0,0.1);
+}
+.mySlides{
+    display: none;
+    position: relative;
+    width: 80%;
+    text-align: center;
+    z-index: 1;
+}
+
+/* :hover {background-color: #e64a19; /* Darker shade on hover */
+
+
+.featured-products {
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    margin-top: 20px;
+}
+.info-section{
+    width: 50%;
+}
+.product-card {
+    background-color: white; /* White for product cards */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* padding: 15px; */
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.testimonials {
+    background-color: #eee; /* Light gray for testimonials section */
+    padding: 20px;
+}
+
+footer {
+    background-color: #333; /* Dark gray for the footer */
+    color: #f5f5f5; /* Light gray for footer text */ 
+    text-align: center; 
+    padding: 10px 0; 
+}

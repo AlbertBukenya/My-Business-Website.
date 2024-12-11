@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>...</head> <!-- Same head as Home Page -->
+<body>
+    <header>...</header> <!-- Same header as Home Page -->
+    <main>
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name"><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email"><br />
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>...</footer> <!-- Same footer as Home Page -->
+</body>
+</html>
+
+<script>
+// JavaScript can handle form submissions if needed
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Thank you for contacting us!');
+});
+</script>
